@@ -7,7 +7,7 @@ require("dotenv").config();
 const app = express();
 
 app.use(cors({
-    origin: "https://todoapp-sand-pi.vercel.app",
+    origin: "https://todoapp-nu-peach.vercel.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"]
   }));
