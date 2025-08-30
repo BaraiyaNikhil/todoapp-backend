@@ -6,7 +6,11 @@ require("dotenv").config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: "https://todoapp-sand-pi.vercel.app/",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"]
+  }));
 app.use(express.json());
 
 // Connect to MongoDB
