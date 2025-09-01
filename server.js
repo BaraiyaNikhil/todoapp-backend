@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors({
     origin: "https://todoapp-psi-bice.vercel.app",
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: ["Content-Type"]
   }));
 app.use(express.json());
